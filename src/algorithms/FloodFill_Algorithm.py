@@ -120,7 +120,7 @@ class FloodFill_Algorithm():
             return True
         return False
 
-    def getClosest(self):
+    def getToClosest(self):
         """
         Moves to the closest valid position adjacent to the current position.
 
@@ -140,6 +140,14 @@ class FloodFill_Algorithm():
                 print("valid")
 
     def move_mouse(old_position, new_position):
+        """
+        Moves to the given position using MMS API.
+
+        Note: This method requirse the actual position, and the objective one.
+
+        Returns:
+            None
+        """
         x1, y1 = old_position
         x2, y2 = new_position
 
